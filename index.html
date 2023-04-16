@@ -37,20 +37,25 @@
             </li>
             <li class=""><a class="link" href="">Contacts</a></li>
           </ul>
-          <button class="btn nav-btn is-open" type="button">
+          <button
+            class="btn nav-btn is-open"
+            aria-controls="menu-container"
+            aria-expanded="false"
+            type="button"
+          >
             <svg width="32" height="22" aria-label="change mobile menu">
-              <use
-                class="js-open-menu"
-                class="icon-menu"
-                href="./images/icons/"
-              ></use>
-
               <use
                 class="icon-close js-close-menu"
                 href="./images/icons/sprite-icons.svg#icon-close"
               ></use>
+              <use
+                class="js-open-menu"
+                class="icon-menu"
+                href="./images/icons/charm_menu-hamburger (2) (1).svg"
+              ></use>
             </svg>
           </button>
+          <div class="menu-container" id="menu-container">menu</div>
         </nav>
         <address class="contact">
           <ul class="list contact-list">
