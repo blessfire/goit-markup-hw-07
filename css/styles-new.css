@@ -52,13 +52,15 @@ img {
   width: 100%;
 }
 .container {
-  padding: 0 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 428px) {
   .container {
     width: 428px;
+    padding
   }
 }
 @media screen and (min-width: 768px) {
