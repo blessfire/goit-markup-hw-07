@@ -271,15 +271,16 @@ img {
 }
 
 /* todo skills */
+
 .section {
   padding-top: var(--section-padding-top);
   padding-bottom: var(--section-padding-bottom);
 }
 
-.skills-box {
+/* .skills-box {
   display: flex;
   gap: var(--box-gap);
-}
+} */
 
 .skills-title {
   font-weight: 500;
@@ -322,7 +323,7 @@ img {
   }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (min-width: 428px) {
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -332,11 +333,13 @@ img {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .skills-box {
+
+  .list.skills-box {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
   }
+
   .skills-title {
     font-weight: 700;
     font-size: 36px;
@@ -348,10 +351,15 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
-  .skills-box {
+  .container {
+    width: 768px;
+  }
+  .list.skills-box {
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px 72px;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: nowrap;
+    flex-basis: calc((100% - 24px) / 2);
   }
   .skills-title {
     text-align: left;
