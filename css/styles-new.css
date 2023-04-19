@@ -52,19 +52,10 @@ img {
   width: 100%;
 }
 .container {
-  padding: 0 15px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 428px) {
-  .container {
-    width: 428px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
 }
 
 /* links */
@@ -281,6 +272,16 @@ img {
 
 /* todo skills */
 
+.section {
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
+}
+
+/* .skills-box {
+  display: flex;
+  gap: var(--box-gap);
+} */
+
 .skills-title {
   font-weight: 500;
   font-size: 20px;
@@ -288,20 +289,10 @@ img {
   color: var(--title-text-color);
 }
 
-.section {
-  padding-top: var(--section-padding-top);
-  padding-bottom: var(--section-padding-bottom);
-}
-@media screen and (max-width: 428px) {
-  .section {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-  .skills-title;
+.skills-text {
+  margin-top: 8px;
 }
 
-.skills-box {
-}
 .list-item::before {
   display: block;
   margin-bottom: 8px;
@@ -331,8 +322,48 @@ img {
     display: none;
   }
 }
-.skills-text {
-  margin-top: 8px;
+
+@media screen and (min-width: 428px) {
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .container {
+    width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .list.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+  }
+
+  .skills-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+  }
+  .skills-text {
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .list.skills-box {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: nowrap;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .skills-title {
+    text-align: left;
+  }
 }
 .work-section {
   padding-bottom: var(--section-padding-bottom);
