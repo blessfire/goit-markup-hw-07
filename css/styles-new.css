@@ -53,7 +53,6 @@ img {
 }
 .container {
   max-width: 428px;
-
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -273,6 +272,8 @@ img {
   background-size: cover;
 }
 .team-list-item {
+  margin: 72px auto;
+  margin-bottom: 0;
   width: 264px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -363,14 +364,9 @@ img {
 }
 
 .team-box {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-  margin-top: 72px;
 }
 @media screen and (min-width: 428px) and (max-width: 767px) {
   .container {
-    max-width: 428px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -536,12 +532,13 @@ img {
 }
 
 .client-list {
-  /* display: flex;
-  justify-content: space-between;
-  gap: 24px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px 16px;
 }
 .item-client-list {
-  width: calc((100% - 2 * 12px) / 2);
+  width: calc((100% - 2 * 8px) / 2);
 }
 .link-clients {
   display: flex;
