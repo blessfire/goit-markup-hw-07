@@ -471,6 +471,7 @@ img {
     padding: 96px 108px;
   }
   .team-box {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 64px;
