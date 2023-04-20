@@ -52,7 +52,7 @@ img {
   width: 100%;
 }
 .container {
-  width: 100%;
+  max-width: 428px;
 
   padding-left: 15px;
   padding-right: 15px;
@@ -534,15 +534,19 @@ img {
   margin-bottom: 72px;
   color: var(--title-text-color);
 }
-.client-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-}
 
+.client-list {
+  /* display: flex;
+  justify-content: space-between;
+  gap: 24px; */
+}
+.item-client-list {
+  width: calc((100% - 2 * 12px) / 2);
+}
 .link-clients {
   display: flex;
-  width: 168px;
+  width: 190px;
+  /* width: 168px; */
   height: 88px;
   align-items: center;
   justify-content: center;
