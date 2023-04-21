@@ -52,7 +52,7 @@ img {
   width: 100%;
 }
 .container {
-  max-width: 428px;
+  max-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -440,9 +440,6 @@ img {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
-  }
-  .skills-text {
-    font-weight: 500;
   }
 }
 
