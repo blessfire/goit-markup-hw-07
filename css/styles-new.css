@@ -249,6 +249,19 @@ img {
   padding-top: var(--section-padding-top);
   padding-bottom: var(--section-padding-bottom);
 }
+.skills-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.skills-text {
+  font-weight: 500;
+}
+.list-item:not(:last-child) {
+  margin-bottom: 72px;
+}
 /* *----------------------TEAM---------------------- */
 
 .team-title {
@@ -274,7 +287,7 @@ img {
 .team-list-item {
   margin: 72px auto;
   margin-bottom: 0;
-  width: 264px;
+  max-width: 264px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -416,18 +429,10 @@ img {
   }
 }
 
-.team-box {
-}
 @media screen and (min-width: 428px) and (max-width: 767px) {
   .container {
     padding-left: 16px;
     padding-right: 16px;
-  }
-
-  .list.skills-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 72px;
   }
 
   .skills-title {
@@ -463,9 +468,7 @@ img {
     line-height: 1.11;
     text-align: left;
   }
-  .skills-text {
-    font-weight: 500;
-  }
+
   .team {
     padding: 96px 108px;
   }
@@ -503,6 +506,13 @@ img {
   .skills-box {
     display: flex;
     gap: var(--box-gap);
+  }
+
+  .skills-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
   }
   .team-box {
     display: flex;
