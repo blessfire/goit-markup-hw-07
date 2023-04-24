@@ -464,7 +464,7 @@ img {
 }
 .overlay p {
   padding: 40px 32px;
-  padding-bottom: ;
+  /* padding-bottom: ; */
   color: var(--team-color);
   transition-property: background-color;
   transition-duration: 250ms;
