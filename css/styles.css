@@ -192,22 +192,7 @@ img {
   font-size: 56px;
   line-height: 1.07;
 }
-.works-title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  color: var(--title-text-color);
-}
-.skills-bg {
-  display: flex;
-}
-.skills-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--title-text-color);
-}
+
 .hero {
   padding: 188px 0;
   font-weight: 700;
@@ -256,6 +241,15 @@ img {
   display: flex;
   gap: var(--box-gap);
 }
+.skills-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+}
+.skills-bg {
+  display: flex;
+}
 .list-item::before {
   display: block;
   margin-bottom: 8px;
@@ -285,10 +279,17 @@ img {
 .work-section {
   padding-bottom: var(--section-padding-bottom);
 }
+
+.works-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--title-text-color);
+}
 .works-box .list {
   display: flex;
   gap: var(--box-gap);
-  margin-top: var(--box-margin-top);
 }
 .team-title {
   font-weight: 700;
@@ -298,13 +299,14 @@ img {
   text-align: center;
   color: var(--title-text-color);
 }
+
+/* team */
+
 .team-box {
   display: flex;
   gap: var(--box-gap);
   margin-top: var(--box-margin-top);
 }
-
-/* team */
 .team-card-text {
   text-align: center;
   padding: 32px 16px;
