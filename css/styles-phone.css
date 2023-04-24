@@ -142,7 +142,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/mobile-hero-@2x.jpg");
+      url("../images/hero-bg-mob@x2.jpg");
   }
 }
 
@@ -430,7 +430,67 @@ img {
 .team-soc-icon {
   fill: var(--team-color);
 }
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .team-box {
+    gap: 64px 24px;
+  }
 }
+@media screen and (min-width: 1200px) {
+  .team-box {
+    gap: 24px;
+  }
+}
+
+/* !-------!-------!-------!------clienst-!-------!-------!-------!-------!-------!-------!-------!-------!-------!-------!-------!------- */
+.clients.container {
+  text-align: center;
+}
+
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  margin-bottom: 72px;
+  color: var(--title-text-color);
+}
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 16px;
+  justify-content: center;
+}
+
+.link-clients {
+  display: flex;
+  width: 190px;
+  height: 88px;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--group-color);
+  border: 1px solid;
+  border-radius: 4px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+.client-icon {
+  fill: currentColor;
+}
+
+.link-clients:hover,
+.link-clients:focus .client-icon {
+  color: var(--primary-color);
+}
+@media screen and (min-width: 768px) {
+  .client-list {
+    gap: 72px 24px;
+  }
+  .link-clients {
+    width: 168px;
+  }
+}
+
 /* !-------!-------!-------!------FOOTER-!-------!-------!-------!-------!-------!-------!-------!-------!-------!-------!-------!------- */
