@@ -57,6 +57,7 @@ button {
   cursor: pointer;
 }
 .btn {
+  display: block;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -64,12 +65,14 @@ button {
   letter-spacing: 0.04em;
 }
 .logo {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--accent-color);
 }
 
@@ -524,12 +527,8 @@ footer {
 }
 
 .footer-logo-text {
-  margin: 0 auto;
   max-width: 268px;
-}
-.footer-logo.link {
-  display: block;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .title-soc-media {
@@ -570,8 +569,12 @@ footer {
   gap: 16px;
   justify-content: center;
 }
+
 .subsribe {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  gap: 16px;
 }
 
 .sub-title {
@@ -579,16 +582,14 @@ footer {
   font-size: 16px;
   color: var(--hero-text-color);
 }
-.sub-form {
-  margin-top: 16px;
-  gap: 24px;
-}
 .sub-input {
+  margin-bottom: 16px;
   padding: 8px 16px;
+  max-width: 398px;
   width: 100%;
   height: 40px;
+  color: var(--hero-text-color);
   border: 1px solid var(--hero-text-color);
-  opacity: 0.3;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
@@ -602,7 +603,7 @@ footer {
 }
 
 .sub-btn {
-  margin-top: 16px;
+  margin: 0 auto;
   position: relative;
   min-width: 165px;
   height: 40px;
@@ -632,9 +633,52 @@ footer {
   pointer-events: none;
   fill: currentColor;
 }
-
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .footer.container {
+    max-width: 584px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .footer-logo {
+    display: inline-block;
+  }
+  .footer-logo-text {
+    margin: unset;
+  }
+  .title-soc-media {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--hero-text-color);
+    margin-bottom: 16px;
+  }
+  .subsribe {
+    text-align: left;
+  }
+  .sub-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .sub-input {
+    width: 264px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .footer.container {
+    max-width: 1158px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: unset;
+  }
+  .footer-logo-text {
+    margin-right: 120px;
+  }
+  .footer-soc-media {
+    margin-right: 80px;
+  }
 }
