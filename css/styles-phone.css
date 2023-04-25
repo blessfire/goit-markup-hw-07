@@ -720,6 +720,13 @@ footer {
   transform: translateX(-50%) scale(0.2);
   opacity: 0;
 }
+
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 408px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .backdrop {
     padding-top: 0;
@@ -727,12 +734,6 @@ footer {
   .modal {
     top: 50%;
     transform: translate(-50%, -50%);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .modal {
-    max-width: 408px;
   }
 }
 .modal-close-btn {
