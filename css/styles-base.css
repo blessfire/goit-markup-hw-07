@@ -397,7 +397,7 @@ img {
 .link-clients:focus .client-icon {
   color: var(--primary-color);
 }
-/* *portfolio menu */
+/* !-------!-------!-------!------Portfolio-!-------!-------!-------!-------!-------!-------!-------!-------!-------!-------!-------!------- */
 .menu {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -498,7 +498,7 @@ img {
   margin-top: 8px;
 }
 
-/* footer */
+/* !-------!-------!-------!------FOOTER-!-------!-------!-------!-------!-------!-------!-------!-------!-------!-------!-------!------- */
 .footer {
   background-color: var(--title-text-color);
 }
