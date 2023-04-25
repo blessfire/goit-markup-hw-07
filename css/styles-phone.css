@@ -698,16 +698,16 @@ img {
   }
 }
 /* !-------!-------!-------!------PORTFOLIO-!-------!-------!-------!-------!-------!-------!-------!-------!-------!-------!-------!------- */
-.menu {
-  padding-top: 96px;
-  padding-bottom: 120px;
+.portfolio-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .list-btns {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  gap: 16px 24px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 .menu-btn {
   padding: 12px 24px;
@@ -727,6 +727,27 @@ img {
 
   color: var(--hero-text-color);
   background-color: var(--primary-color);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .list-btns {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .list-btns {
+    margin-bottom: 72px;
+  }
 }
 .card-set {
   padding: 0;
